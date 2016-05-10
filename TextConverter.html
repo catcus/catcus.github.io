@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content=width=device-width, initial-scale=1>
+<title>Text Converter</title>
+<style>
+body{
+	margin: 10px 30px;
+	background-color: #123;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+textarea{
+	height: 200px;
+	width: 500px;
+	margin: 10px auto;
+	resize: none;
+}
+textarea::-webkit-input-placeholder{
+	color: #123;
+}
+input, textarea{
+	border: none;
+	border-radius: 5px;
+	background-color: #abc;
+	padding: 15px;
+}
+input[type="button"]{
+	background-color: #99c;
+}
+</style>
+<script>
+function convert(){
+	var s=document.getElementById("in").value;
+	var q=document.getElementById("code").value;
+	var result=q+s.split("").join(q);
+	document.getElementById("out").value=result;
+}
+</script>
+</head>
+<body>
+<textarea id="in" placeholder="Write here" autofocus></textarea>
+<br>
+<input id="code" value="&amp;&#0035;0822;"></input>
+<input type="button" value="Convert" onClick=convert() ></input>
+<input type="button" value="Clear" onClick=document.getElementById("in").value='' ></input>
+<br>
+<textarea id="out" placeholder="Result" readonly></textarea>
+<br>
+</body>
+</html>
