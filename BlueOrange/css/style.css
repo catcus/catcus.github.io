@@ -1,0 +1,79 @@
+/*
+h1 	34px
+	head 32px
+	jumbo 40px
+h2	24px
+h3	22px
+p
+	jumbo 16px
+*/
+/*Fonts*/
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+
+/*Main*/
+body{
+	color:#637f83;
+	font-family:SourceSansPro;
+}
+h1{
+	font-size:34px;
+}
+h2{
+	font-size:24px;
+}
+h3{
+	font-size:22px;
+}
+p{
+	font-size:14px;
+}
+a{
+	text-decoration:none;
+}
+header{
+	font-weight: bold;
+}
+header h1{
+	float:left;
+}
+nav{
+	float:right;
+}
+nav li{
+	font-size:16px;
+	display:inline;
+	text-transform:uppercase;
+}
+nav a{
+	color: #637f83;
+}
+nav a:hover{
+	color: #e4551d;
+}
+.dark{ /* :not(#social) doesn't work, I don't understand why */
+	background-color:#637f83;
+	color:#fff;
+}
+#social{
+	background-color:#fff;
+	color:#637f83;
+}
+.fa-circle{
+	color:#e4551d;
+}
+#jumbotron{
+	clear:left;
+	height:520px;
+	background:url('../img/wallpaper.jpg') no-repeat;
+	background-size: cover;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+main{
+	height: 800px;
+}
