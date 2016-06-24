@@ -33,12 +33,15 @@ body{
 	display: flex;
 	flex-flow: row wrap;
 	text-align: center;
-	max-width:100%;
+	width:100%;
 	line-height:1.5;
 }
-/*header,#jumbotron,main,footer{
+footer p{
+	color:#fff;
+}
+header,#jumbotron,main,footer{
 	flex: 1 100%;
-}*/
+}
 h1{
 	font-size:34px;
 	font-family:SourceSansPro-Bold, sans-serif;
@@ -88,9 +91,7 @@ nav a:hover{
 	background-color:#637f83;
 	color:#fff;
 }
-.part{
-	min-width:100%;
-}
+
 #social{
 	background-color:#fff;
 	color:#637f83;
@@ -160,7 +161,7 @@ hr{
 .row-item{
 	display: inline-table;
 	text-align:left;
-	width:400px;
+	width:200px;
 }
 .row-item img{
 	float:left;
@@ -196,4 +197,11 @@ hr{
 	-webkit-flex-direction:column;
 	-webkit-align-items:center;
 	-webkit-justify-content:center;
+}
+/*------------------Media queries--------------------------------------------------*/
+/* 960px/16px= 60em*/
+@media screen and (max-width: 60em) {
+	body{
+		color:pink;
+	}
 }
