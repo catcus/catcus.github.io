@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset=utf-8>
-<meta name=viewport content=width=device-width, initial-scale=1>
+<meta name=viewport content='width=device-width' initial-scale='1'>
 <title>Text Converter</title>
 <style>
 body{
@@ -33,7 +33,7 @@ input[type="button"]{
 function convert(){
 	var s=document.getElementById("in").value;
 	var q=document.getElementById("code").value;
-	var result=q+s.split("").join(q);
+	var result=q+s.split("").join(q)+q;
 	document.getElementById("out").value=result;
 }
 </script>
@@ -41,9 +41,9 @@ function convert(){
 <body>
 <textarea id="in" placeholder="Write here" autofocus></textarea>
 <br>
-<input id="code" value="&amp;&#0035;0822;"></input>
-<input type="button" value="Convert" onClick=convert() ></input>
-<input type="button" value="Clear" onClick=document.getElementById("in").value='' ></input>
+<input id="code" value="&amp;&#0035;0822;">
+<input type="button" value="Convert" onClick=convert() >
+<input type="button" value="Clear" onClick=document.getElementById("in").value='' >
 <br>
 <textarea id="out" placeholder="Result" readonly></textarea>
 <br>
