@@ -32,7 +32,7 @@ ul{
 }
 ul li{
     margin-bottom: 5px;
-    transition: 4s ease;
+    transition: 3s ease;
 }
 ul li:hover{
     margin-bottom: 15px;
