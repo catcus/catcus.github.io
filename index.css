@@ -30,12 +30,22 @@ body{
 ul{
     list-style-type: none;
 }
+ul li{
+    margin-bottom: 5px;
+    transition: 3s ease;
+}
+ul li:hover{
+    margin-bottom: 15px;
+}
 li a{
     text-decoration: none;
     color: #112233;
+    transition: font 1s ease;
 }
 li a:hover{
     color: darkblue;
+    font-weight: 900;
+    font-size: 22px;
 }
 @media screen and (max-device-width: 800px){
     body{
