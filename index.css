@@ -32,10 +32,6 @@ ul{
 }
 ul li{
     margin-bottom: 5px;
-    transition: 3s ease;
-}
-ul li:hover{
-    margin-bottom: 15px;
 }
 li a{
     text-decoration: none;
